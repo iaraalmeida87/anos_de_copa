@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+    <h3>Anos em que houveram copa:</h3>
+        <script>
+            function pulaLinha() {
+                document.write("<br>");
+            }
+            function mostra(frase) {
+                document.write(frase);
+                pulaLinha();
+            }
+           var limite = parseInt(prompt("Digite o ano até quando quer ser informado(a) se houve Copa"));
+           var anoCopa = 1930;
+
+           while(anoCopa <= limite) {
+                mostra("Teve copa em " + anoCopa);
+                anoCopa = anoCopa + 4;
+            }
+           mostra("FIM");
+        </script>
